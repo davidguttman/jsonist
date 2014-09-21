@@ -45,6 +45,10 @@ function makeMethod (method, data) {
     if (!options.headers['accept'])
       options.headers['accept'] = 'application/json'
 
+    if ((typeof window !== "undefined") && url.match(/^\//)) {
+      url = window.location.origin + url;
+    }
+
     var request = (options.hyperquest || hyperquest)(url, options)
     collector(request, callback)
 
