@@ -22,7 +22,7 @@
     "url": "https://github.com/rvagg/jsonist/issues"
   },
   "dependencies": {
-    "bl": "^0.7.0",
+    "bl": "^0.9.0",
     "json-stringify-safe": "~5.0.0",
     "hyperquest": "~0.3.0"
   },
